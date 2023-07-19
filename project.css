@@ -1,0 +1,495 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    /* box-sizing: border-box; */
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#c40350,#6803ab,#b902bf);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.main h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
+.main h1 span{
+    color: #ff2963;
+}
+
+textarea{
+    width: 600px;
+    height: 250px;
+    background: #cfcee359;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.578);
+}
+
+.options{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button{
+    background: #ff2963;
+    color: #fff;
+    font-family: 'Poppins','sans-serif';
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+button:active{
+    transform: scale(0.90);
+}
+
+button:hover{
+    color: #272727;
+}
+
+button img{
+    width: 16px;
+    margin-right: 10px;
+    color: #272727;
+}
+select{
+    flex:1;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    background: #cfcee359;
+    height: 50px;
+    padding: 0px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none;
+    background-image: url(images/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 20px;
+}
+
+footer{
+    background: linear-gradient(45deg,#c40350,#6803ab,#b902bf);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    text-align: center;
+    padding-top: 10px;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+footer li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    padding-left: 20px;
+}
+
+footer ul{
+    margin-right: 88px;
+}
+
+footer .footericons a{
+    background-color: #ff2963;
+    color: #fff;
+    padding: 15px;
+    border-radius: 100px;
+    display: flex;
+    font-size: 25px;
+    transition: all 0.2s ease;
+}
+
+footer .footericons a:active{
+    transform: scale(0.90);
+}
+
+footer .footericons a:hover{
+    color: #272727;
+}
+
+footer .footerend{
+    background-color: #272727;
+    color: white;
+    padding: 0.25px ;
+    margin-top: 1px;
+}
+
+footer .footerend p{
+    margin-bottom: 10px;
+    margin-right: 29px;
+    font-size:25px;
+    font-family: 'Staatliches', cursive;
+}
+
+
+
+
+@media screen and (max-width:320px){
+    .main{
+        width: 100%;
+
+    }
+    .main h1{
+        font-size: 21px;
+    }
+    .options{
+        width: 80%;
+        align-items: center;
+        gap: 10px;
+        margin-right: 19px;
+    }
+    
+
+    button{
+        font-size: 12px;
+        padding: 10px 30px;
+        height: 42px;
+    }
+
+    select{
+        font-size: 8px;
+        height: 42px;
+        padding: 0px;
+
+    }
+
+    select{
+        font-weight: 500;
+        background-position-x: 122px;
+        background-position-y: 18px;
+    }
+
+    textarea{
+        width: 80%;
+        height: 250px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        height: 40%;
+    }
+
+    footer ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    footer li{
+        margin: 5px;
+        padding:10px;
+    }
+
+    footer .footericons{
+        align-items: center;
+        margin-left: 5;
+    }
+
+    footer .footericons a{
+        padding:8px;
+    }
+
+    footer .footerend{
+        padding: 0.25px ;
+        margin-top: 0px;
+    }
+
+    
+    footer .footerend p{
+        margin: 10px;
+        margin-bottom: 2px;
+        align-items: center;
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:375px) and (min-width:321px){
+    .main{
+        width: 100%;
+
+    }
+    .main h1{
+        font-size: 21px;
+    }
+    .options{
+        width: 80%;
+        align-items: center;
+        gap: 10px;
+        margin-right: 19px;
+    }
+    
+
+    button{
+        font-size: 12px;
+        padding: 10px 30px;
+        height: 42px;
+    }
+
+    select{
+        font-size: 8px;
+        height: 42px;
+        padding: 0px;
+
+    }
+
+    select{
+        font-weight: 500;
+        background-position-x: calc(100% - 5%);
+        background-position-y: 18px;
+    }
+
+    textarea{
+        width: 80%;
+        height: 250px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        height: 40%;
+    }
+
+    footer ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    footer li{
+        margin: 5px;
+        padding:10px;
+    }
+
+    footer .footericons{
+        align-items: center;
+        margin-left: 5;
+    }
+
+    footer .footericons a{
+        padding:8px;
+    }
+
+    footer .footerend{
+        padding: 0.25px ;
+        margin-top: 0px;
+    }
+
+    
+    footer .footerend p{
+        margin: 10px;
+        margin-bottom: 2px;
+        align-items: center;
+        font-size:18px;
+    }
+}
+
+
+@media screen and (max-width:426px) and (min-width:375px){
+    .main{
+        width: 100%;
+
+    }
+    .main h1{
+        font-size: 26px;
+    }
+    .options{
+        width: 80%;
+        align-items: center;
+        gap: 10px;
+        margin-right: 19px;
+    }
+    
+
+    button{
+        font-size: 12px;
+        padding: 10px 30px;
+        height: 42px;
+    }
+
+    select{
+        font-size: 8px;
+        height: 42px;
+        padding: 0px;
+
+    }
+
+    select{
+        font-weight: 500;
+        background-position-x: calc(100% - 5%);
+        background-position-y: 18px;
+    }
+
+    textarea{
+        width: 80%;
+        height: 250px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        height: 40%;
+    }
+
+    footer ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    footer li{
+        margin: 5px;
+        padding:10px;
+    }
+
+    footer .footericons{
+        align-items: center;
+        margin-left: 5;
+    }
+
+    footer .footericons a{
+        padding:8px;
+    }
+
+    footer .footerend{
+        padding: 0.25px ;
+        margin-top: 0px;
+    }
+
+    
+    footer .footerend p{
+        margin: 10px;
+        margin-bottom: 2px;
+        align-items: center;
+        font-size:18px;
+    }
+}
+
+
+
+@media screen and (max-width:668px) and (min-width:426px){
+    .main{
+        width: 100%;
+
+    }
+    .main h1{
+        font-size: 28px;
+    }
+    .options{
+        width: 80%;
+        align-items: center;
+        gap: 12px;
+    }
+
+    button{
+        font-size: 12px;
+        padding: 10px 30px;
+        height: 45px;
+    }
+
+    select{
+        font-size: 10px;
+        height: 45px;
+        padding: 0px;
+        font-weight: 500;
+        background-position-x: calc(100% - 5%);
+        background-position-y: 18px;
+
+    }
+
+    textarea{
+        width: 80%;
+        height: 250px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        height: 50%;
+    }
+
+    footer ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    footer li{
+        padding:10px;
+    }
+
+    footer .footericons{
+        align-items: center;
+        margin-left: 5;
+    }
+
+    footer .footericons a{
+        padding:10px;
+    }
+
+    footer .footerend{
+        padding: 0.25px ;
+        margin-top: 0px;
+    }
+
+    
+    footer .footerend p{
+        margin: 10px;
+        margin-bottom: 2px;
+        align-items: center;
+        font-size:20px;
+    }
+}
